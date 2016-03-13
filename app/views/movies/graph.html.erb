@@ -1,0 +1,13 @@
+<section>
+  <strong>Profile Data</strong>
+  <div>
+    <%= @graph.get_object('me') %>
+  </div>
+</section>
+
+<section>
+  <strong>Feed Data</strong>
+  <div>
+    <%= @graph.get_connections('me', 'feed') %>
+  </div>
+</section>
